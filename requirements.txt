@@ -7,3 +7,7 @@ tree-sitter>=0.23,<0.27
 tree-sitter-java>=0.23,<0.24
 jupyterlab>=4
 ipykernel>=6
+requests>=2.31
+scipy>=1.14
+# MeasureSoftGram-Core fixado no commit avaliado (v1.5.5rc4); ver decisão D10
+msgram_core @ git+https://github.com/fga-eps-mds/MeasureSoftGram-Core@02af9a9
