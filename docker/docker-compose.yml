@@ -1,0 +1,35 @@
+# Seção 2 do experimento: SonarQube como instrumento de referência.
+# Só o servidor do SonarQube. O banco é o H2 embutido, que guarda apenas o
+# estado interno da ferramenta. Os dados do experimento saem pela API para data/.
+#
+# Subir:   docker compose -f docker/docker-compose.yml up -d
+# Status:  http://localhost:9000  (primeiro acesso: admin / admin, a senha é trocada)
+# Parar:   docker compose -f docker/docker-compose.yml down   (os volumes são mantidos)
+#
+# Reprodutibilidade: depois do primeiro "up", troque "community" pelo digest
+# exibido em: docker image inspect sonarqube:community --format '{{index .RepoDigests 0}}'
+# O notebook também registra a versão do servidor (api/server/version).
+
+name: tcc-storch-experiment
+
+services:
+  sonarqube:
+    image: sonarqube:community
+    container_name: tcc-sonarqube
+    ports:
+      - "9000:9000"
+    environment:
+      SONAR_ES_BOOTSTRAP_CHECKS_DISABLE: "true"
+    volumes:
+      - sonarqube_data:/opt/sonarqube/data
+      - sonarqube_extensions:/opt/sonarqube/extensions
+      - sonarqube_logs:/opt/sonarqube/logs
+    restart: unless-stopped
+
+volumes:
+  sonarqube_data:
+    name: tcc-storch-experiment_sonarqube_data
+  sonarqube_extensions:
+    name: tcc-storch-experiment_sonarqube_extensions
+  sonarqube_logs:
+    name: tcc-storch-experiment_sonarqube_logs

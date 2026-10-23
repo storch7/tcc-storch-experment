@@ -31,11 +31,23 @@ Requisitos: **Python 3.12+** (versões anteriores não leem a sintaxe do Django 
 pandas 3, e o corpus muda), git e acesso ao GitHub (a Seção 1 clona os seis repositórios,
 cerca de 1 GB). A partir da Seção 2: SonarQube local e `.env` (ver `.env.example`).
 
+## SonarQube (a partir da Seção 2)
+
+Requer Docker Desktop com pelo menos 4 GB de memória (Settings → Resources).
+
+```bash
+docker compose -f docker/docker-compose.yml up -d
+```
+
+1. Aguarde 1–2 minutos e abra http://localhost:9000 (admin / admin; troque a senha).
+2. Gere um token: My Account → Security → Generate Token (tipo *Global Analysis Token*).
+3. Copie `.env.example` para `.env` e preencha `SONAR_TOKEN`.
+
 ## Estado
 
 | Seção | Situação |
 |---|---|
 | 0 Configuração | implementada |
 | 1 Corpus e funil | implementada (k por estrato e corte de LOC pendentes) |
-| 2 Referência SonarQube | próxima parte |
+| 2 Referência SonarQube | em andamento (Docker criado) |
 | 3–11 | a implementar |
