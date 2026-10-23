@@ -1,0 +1,100 @@
+{
+  "gerado_em": "2026-10-20T04:45:49+00:00",
+  "python": "3.9.6",
+  "sistema": "macOS-26.6.2-arm64-arm-64bit",
+  "git": "git version 2.50.1 (Apple Git-155)",
+  "seed": 42,
+  "pacotes": {
+    "pandas": "2.3.3",
+    "numpy": "2.0.2",
+    "matplotlib": "3.9.4",
+    "tree-sitter": "0.23.2",
+    "tree-sitter-java": "0.23.5"
+  },
+  "regras": {
+    "diretorios_excluidos": [
+      [
+        "teste",
+        [
+          "test",
+          "tests",
+          "testing",
+          "test_utils",
+          "testutils",
+          "_testing",
+          "it",
+          "e2e",
+          "test-harness"
+        ]
+      ],
+      [
+        "documentacao_exemplo",
+        [
+          "doc",
+          "docs",
+          "example",
+          "examples",
+          "sample",
+          "samples",
+          "demo"
+        ]
+      ],
+      [
+        "script_build_benchmark",
+        [
+          "scripts",
+          "script",
+          "benchmark",
+          "benchmarks",
+          "asv_bench",
+          "ci",
+          "build",
+          "dist",
+          "buildtools",
+          ".github",
+          "tools"
+        ]
+      ],
+      [
+        "migracao_locale",
+        [
+          "migrations",
+          "locale"
+        ]
+      ],
+      [
+        "vendor_gerado",
+        [
+          "vendor",
+          "third_party",
+          "_vendor",
+          "generated",
+          "gen"
+        ]
+      ]
+    ],
+    "padroes_nome_teste": [
+      "^test_.*\\.py$",
+      ".*_test\\.py$",
+      "^conftest\\.py$",
+      ".*Test\\.java$",
+      ".*Tests\\.java$",
+      ".*IT\\.java$",
+      "^Test.*\\.java$"
+    ],
+    "arquivos_estruturais": [
+      "__init__.py",
+      "conftest.py",
+      "module-info.java",
+      "package-info.java",
+      "setup.py"
+    ],
+    "tipos_excluidos": [
+      "anotacao",
+      "sem_definicoes"
+    ],
+    "loc_min": null,
+    "loc_max": null,
+    "k_por_estrato": null
+  }
+}

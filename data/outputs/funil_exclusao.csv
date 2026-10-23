@@ -1,0 +1,12 @@
+motivo,apollo,conductor,django,flask,guava,pandas,total
+total_encontrado,767,1470,2919,83,3227,1514,9980
+arquivo_estrutural,2,0,656,16,48,184,906
+teste,238,512,1551,37,1810,1012,5160
+documentacao_exemplo,0,1,4,8,0,5,18
+script_build_benchmark,8,0,8,0,128,74,218
+migracao_locale,0,0,124,0,0,0,124
+erro_parse,0,0,4,0,0,1,5
+tipo_sem_definicoes,0,0,20,4,0,16,40
+tipo_anotacao,7,19,0,0,62,0,88
+sem_funcoes,86,162,33,0,149,2,432
+elegivel,426,776,519,18,1030,220,2989

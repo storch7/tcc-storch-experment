@@ -1,0 +1,9 @@
+# Exige Python >= 3.12: o ast precisa entender a sintaxe usada pelo Django 6.1 e pelo pandas 3
+# (com Python 3.9, 5 arquivos falham na classificação e o corpus muda de 2.994 para 2.989)
+pandas>=2.2,<4
+numpy>=1.26
+matplotlib>=3.8
+tree-sitter>=0.23,<0.27
+tree-sitter-java>=0.23,<0.24
+jupyterlab>=4
+ipykernel>=6

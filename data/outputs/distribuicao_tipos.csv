@@ -1,0 +1,8 @@
+projeto,classe,enum_record,interface,misto,modulo_funcoes,total
+apollo,424,0,2,0,0,426
+conductor,755,3,18,0,0,776
+django,288,0,0,126,105,519
+flask,6,0,0,10,2,18
+guava,1006,14,10,0,0,1030
+pandas,39,0,0,92,89,220
+total,2518,17,30,228,196,2989

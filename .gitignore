@@ -1,0 +1,8 @@
+# clones dos repositórios analisados (recriados pelo notebook a partir de config/corpus_repos.csv)
+data/raw/repos/
+# ambiente e segredos
+.venv/
+.env
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
